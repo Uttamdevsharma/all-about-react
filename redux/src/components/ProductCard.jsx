@@ -1,13 +1,9 @@
 import React from 'react'
 import {useDispatch} from "react-redux";
 import { addToCart } from '../features/cart';
-
-
 const ProductCard = () => {
 
     const dispatch = useDispatch();
-
-
     const product = {
         id : 1,
         name : "Smart Watch",
@@ -20,14 +16,8 @@ const ProductCard = () => {
         <p>{product.price}</p>
         <button onClick={() => dispatch(addToCart(product)) }>
             Add to Cart
-        </button>
-     
-      
-    </div>
-
-
-
-    
+        </button>     
+    </div> 
     </>
   )
 }
